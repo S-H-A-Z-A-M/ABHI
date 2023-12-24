@@ -1,0 +1,711 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/*-------------------------------------------
+-------------------NAVBAR--------------------
+------------------------------------------- */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  padding: 10px;
+}
+
+.header .himage > img {
+  width: 50px;
+  height: auto;
+  margin-left: 30px;
+}
+
+.header > nav > ul {
+  display: flex;
+  list-style: none;
+  gap: 5vw;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+.header > nav > ul > li > a {
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+  color: #232323;
+}
+
+.header > nav > ul > li > a:hover {
+  transform: scale(1.1);
+  /* cursor: crosshair; */
+}
+
+.header .hicons > a {
+  margin-right: 30px;
+  text-decoration: none;
+}
+
+.header .hicons > a > ion-icon {
+  font-size: 24px;
+}
+
+.header .hinsta:hover {
+  color: red;
+}
+
+.header .hyout:hover {
+  color: red;
+  transition: 0.3s ease-in-out;
+}
+
+.header .hwhat:hover {
+  color: green;
+}
+
+.header .hlink:hover {
+  color: blue;
+}
+
+/*-------------------------------------------
+-----------------HERO-SECTION----------------
+------------------------------------------- */
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 90px;
+  gap: 60px;
+}
+
+.hero-content .h-heading {
+  font-size: 48px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero-content .h-heading > h1 {
+  font-weight: 500;
+}
+
+.hero-content .h-video > video {
+  border-radius: 100%;
+}
+
+.hero .h-downArrow > ion-icon {
+  display: block;
+  margin: 0 auto 50px;
+  font-size: 40px;
+}
+
+/*-------------------------------------------
+-----------------About US----------------
+------------------------------------------- */
+
+.aheading {
+  text-align: center;
+}
+
+.aheading > h1 > span {
+  color: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-size: 72px;
+  background: linear-gradient(120deg, #98de5b, #08e1ae);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  padding: 15px 200px;
+}
+
+.info-card .infoimg img {
+  width: 20vw;
+  height: 20vw;
+}
+
+.info-card .infotext {
+  font-family: "Montserrat", sans-serif;
+}
+
+.info-card .infotext h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.info-card .infotext p {
+  font-size: 20px;
+  color: #555555;
+  line-height: 1.5;
+}
+
+/*-------------------------------------------
+-----------------Carousel----------------
+------------------------------------------- */
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.carsousel {
+  padding: 100px;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.cartext h1 span {
+  color: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-size: 72px;
+  background: linear-gradient(120deg, #98de5b, #08e1ae);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 20s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 120px;
+  margin: 0 40px;
+}
+
+/*-------------------------------------------
+-----------------Counter----------------
+------------------------------------------- */
+
+.counter {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  margin-bottom: 5rem;
+}
+
+.counter .cimage img {
+  width: 40vw;
+}
+.counter .stats-item {
+  padding: 50px 0;
+  border-bottom: 1px solid #e4e4e4;
+  font-size: 20px;
+  line-height: 0;
+}
+
+.counter .stats-item span {
+  font-size: 40px;
+  display: block;
+  font-weight: 500;
+  color: #2ef8a0;
+}
+
+.purecounter::after {
+  content: "+";
+}
+
+.counter .stats-item p {
+  font-weight: 600;
+  display: block;
+  margin-left: 150px;
+}
+/*-------------------------------------------
+-----------------Video----------------
+------------------------------------------- */
+.video {
+  margin-top: 15rem;
+  display: block;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+iframe {
+  width: 800px; /* Set the desired width */
+  height: 450px; /* Set the desired height */
+  border: 2px solid #ccc; /* Add a border, change the color as desired */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 3px 3px 5px #888;
+  /* Add a shadow */
+}
+
+/*-------------------------------------------
+-----------------Events----------------
+------------------------------------------- */
+
+.h-event {
+  text-align: center;
+  background: #f2f4f8;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.h-event > h1 > span {
+  color: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-size: 72px;
+  background: linear-gradient(120deg, #98de5b, #08e1ae);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.event {
+  background: #f2f4f8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  font-family: "Open Sans";
+  padding: 30px 30px;
+}
+
+.education {
+  --bg-color: #ffd861;
+  --bg-color-light: #ffeeba;
+  --text-color-hover: #4c5656;
+  --box-shadow-color: rgba(255, 215, 97, 0.48);
+}
+
+.credentialing {
+  --bg-color: #b8f9d3;
+  --bg-color-light: #e2fced;
+  --text-color-hover: #4c5656;
+  --box-shadow-color: rgba(184, 249, 211, 0.48);
+}
+
+.wallet {
+  --bg-color: #ceb2fc;
+  --bg-color-light: #f0e7ff;
+  --text-color-hover: #fff;
+  --box-shadow-color: rgba(206, 178, 252, 0.48);
+}
+
+.human-resources {
+  --bg-color: #dce9ff;
+  --bg-color-light: #f1f7ff;
+  --text-color-hover: #4c5656;
+  --box-shadow-color: rgba(220, 233, 255, 0.48);
+}
+
+.card {
+  width: 220px;
+  height: 321px;
+  background: #fff;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+    0 24px 46px var(--box-shadow-color);
+}
+
+.card:hover .overlay {
+  transform: scale(4) translateZ(0);
+}
+
+.card:hover .circle {
+  border-color: var(--bg-color-light);
+  background: var(--bg-color);
+}
+
+.card:hover .circle:after {
+  background: var(--bg-color-light);
+}
+
+.card:hover p {
+  color: var(--text-color-hover);
+}
+
+.card:active {
+  transform: scale(1) translateZ(0);
+  box-shadow: 0 15px 24px rgba(0, 0, 0, 0.11),
+    0 15px 24px var(--box-shadow-color);
+}
+
+.card p {
+  font-size: 17px;
+  color: #4c5656;
+  margin-top: 30px;
+  z-index: 2;
+  transition: color 0.3s ease-out;
+}
+
+.card p > span {
+  font-size: 40px;
+  color: #4c5656;
+  margin-top: 40px;
+  z-index: 1000;
+  transition: color 0.3s ease-out;
+}
+
+.circle {
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-out;
+}
+
+.circle:after {
+  content: "";
+  width: 118px;
+  height: 118px;
+  display: block;
+  position: absolute;
+  background: var(--bg-color);
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
+  transition: opacity 0.3s ease-out;
+}
+
+.circle svg {
+  z-index: 3;
+  transform: translateZ(0);
+}
+
+.overlay {
+  width: 72px;
+  position: absolute;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  top: 80px;
+  left: 30%;
+  z-index: 0;
+  transition: transform 0.3s ease-out;
+}
+
+@media (max-width: 768px) {
+  .event {
+    justify-content: center;
+  }
+
+  .event .card {
+    width: calc(50% - 20px);
+    /* Display two cards in one line with spacing */
+    margin: 10px;
+    /* Add some spacing between cards */
+  }
+}
+
+/*-------------------------------------------
+-----------------FOOTER----------------
+------------------------------------------- */
+
+.footer {
+  background-color: #26333a;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.footer .fcontent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 6rem;
+}
+
+.footer .fcontent .social > p {
+  font-size: 28px;
+}
+
+.footer .fcontent .social .ficons {
+  font-size: 38px;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.social .ficons > a {
+  text-decoration: none;
+  color: #232323;
+  margin-right: 28px;
+}
+
+.quicklinks > h3 {
+  font-size: 28px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  font-size: 28px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.links > a {
+  text-decoration: none;
+  color: #232323;
+  margin-bottom: 5px;
+}
+
+.contacts {
+  width: 500px;
+}
+
+.contacts h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.sub-contact {
+  display: flex;
+  font-size: 20px;
+  gap: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.footer .svg {
+  height: 10vw;
+  width: 78vw;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer .hello {
+  fill: #31424b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12vw;
+  font-weight: 1000;
+  transform: translate(0, 10vw);
+}
+
+/*-------------------------------------------
+-----------------team----------------
+------------------------------------------- */
+
+.team {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.team .h-team {
+  margin: 3rem 0 5rem;
+}
+
+.team .h-team h1 span {
+  color: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-size: 72px;
+  background: linear-gradient(120deg, #98de5b, #08e1ae);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-transform: uppercase;
+}
+
+.tcard .thead {
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+}
+
+.tcard .thead h1 {
+  font-weight: 100;
+}
+
+.tcard .tflex {
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10rem;
+}
+
+.member {
+  width: 300px;
+  height: 430px;
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+}
+
+.member img {
+  width: 270px;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.member h4 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.member span {
+  display: block;
+  font-style: italic;
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 10px;
+  font-weight: 100;
+}
+
+.member .social {
+  padding: 1rem 0;
+}
+
+.member a ion-icon {
+  color: #6c757d;
+  font-size: 24px;
+  border-radius: 50%;
+  border: 1px solid #6c757d;
+  padding: 5px;
+}
+
+/*-------------------------------------------
+-----------------contact----------------
+------------------------------------------- */
+
+.contact {
+  padding: 130px 0;
+}
+
+.contact .heading h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin:0 0 5rem;
+  padding: 0;
+}
+
+.contact .heading h2 span {
+  color: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-size: 72px;
+  background: linear-gradient(120deg, #98de5b, #08e1ae);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-transform: uppercase;
+}
+
+.contact .heading p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #999999;
+  margin: 20px 0 60px;
+  padding: 0;
+}
+
+.contact .form-control {
+  padding: 25px;
+  font-size: 13px;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+  border: 0;
+  border-radius: 10px;
+}
+
+.contact button.btn {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #ff9100;
+  color: #ffffff;
+}
+
+.contact .title h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact .title p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #999;
+  line-height: 1.6;
+  margin: 0 0 40px;
+}
+
+.contact .content .info {
+  margin-top: 30px;
+}
+.contact .content .info i {
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  color: #02434b;
+  margin-right: 20px;
+  text-align: center;
+  width: 20px;
+}
+.contact .content .info h4 {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.contact .content .info h4 span {
+  font-size: 13px;
+  font-weight: 300;
+  color: #999999;
+}
