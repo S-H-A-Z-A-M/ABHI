@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="../lookup/main.css" />
   </head>
   <body>
-    <header class="header" id="header">
+    <header class="header" id="header" data-aos="fade-up">
       <div class="himage">
         <img src="../assests/img/Abhivriddhi Logo without BG.png" alt="" />
       </div>
       <nav>
         <ul>
-          <li><a href="">HOME</a></li>
-          <li><a href="">EVENTS</a></li>
-          <li><a href="">TEAM</a></li>
-          <li><a href="">CONTACT</a></li>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./event.html">EVENTS</a></li>
+          <li><a href="./team.html">TEAM</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
         </ul>
       </nav>
       <div class="hicons">
@@ -35,7 +35,7 @@
       </div>
     </header>
 
-    <herosection class="hero" id="hero">
+    <herosection class="hero" id="hero" data-aos="fade-up">
       <div class="hero-content">
         <div class="h-heading">
           <h1>Abhivriddhi</h1>
@@ -55,7 +55,7 @@
       </div>
     </herosection>
 
-    <about class="about" id="about">
+    <about class="about" id="about" data-aos="fade-up">
       <div class="aheading">
         <h1><span>ABOUT US</span></h1>
       </div>
@@ -111,7 +111,7 @@
       </div>
     </about>
 
-    <sponsor>
+    <sponsor data-aos="fade-up">
       <div class="carsousel">
         <div class="cartext" >
           <h1><span>Sponsor</span></h1>
@@ -143,7 +143,7 @@
         </div>
       </div>
 
-      <div class="counter">
+      <div class="counter" data-aos="fade-up">
         <div class="cimage">
           <img src="../assests/img/stats-img.svg" />
         </div>
@@ -185,7 +185,7 @@
       </div>
     </sponsor>
 
-    <videosection class="video">
+    <videosection class="video" data-aos="fade-up">
       <iframe
         src="https://www.youtube.com/embed/-Jb-xY7XCaA?si=Niv4gTvULZLd0Pv1"
         title="YouTube video player"
@@ -197,7 +197,7 @@
       ></iframe>
     </videosection>
 
-    <footer id="footer" class="footer">
+    <footer id="footer" class="footer" data-aos="fade-up">
       <div class="fcontainer">
         <div class="fcontent">
           <div class="social">
@@ -261,8 +261,12 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    AOS.init();
+  });
       // JavaScript code for the counter
       document.addEventListener("DOMContentLoaded", function () {
         // Find the element with the class 'cstat'

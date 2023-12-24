@@ -87,7 +87,7 @@ html {
 }
 
 .hero-content .h-heading {
-  font-size: 48px;
+  font-size: 41px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -462,6 +462,7 @@ iframe {
   background-color: #26333a;
   font-family: "Montserrat", sans-serif;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  color:whitesmoke;
 }
 
 .footer .fcontent {
@@ -483,7 +484,7 @@ iframe {
 
 .social .ficons > a {
   text-decoration: none;
-  color: #232323;
+  color: white;
   margin-right: 28px;
 }
 
@@ -501,7 +502,7 @@ iframe {
 
 .links > a {
   text-decoration: none;
-  color: #232323;
+  color: white;
   margin-bottom: 5px;
 }
 
